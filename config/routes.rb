@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get '', to:'posts#index'
   get 'posts/index'
   get 'posts/viewpage'
+  get 'posts/show_all'
 
   resources :articles
   resources :posts

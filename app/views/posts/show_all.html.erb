@@ -1,0 +1,12 @@
+<h1> All data in Post</h1>
+<div>
+  <% @allposts.each do |post| %>
+  <%= post.title %>
+  <br>
+  <%= post.body %>
+  <br>
+    <%= "-"*20%>
+    <br>
+
+<% end %>
+</div>

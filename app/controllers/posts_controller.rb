@@ -18,6 +18,10 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
   end
 
+  def show_all
+    @allposts = Post.all
+  end
+
   private
   def post_params
     params.require(:post).permit(:title, :body)
