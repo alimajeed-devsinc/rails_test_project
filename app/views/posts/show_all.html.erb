@@ -5,8 +5,12 @@
   <br>
   <%= post.body %>
   <br>
-    <%= "-"*20%>
+  <%= link_to 'Update OR Delete' , post_path(post) %>
+ <br>
+ <br>
+  <%= "-"*20%>
     <br>
+<%= link_to 'New Record' , new_post_path, method: :get %>
 
 <% end %>
 </div>
