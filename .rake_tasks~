@@ -34,6 +34,8 @@ restart
 routes
 secret
 stats
+task1:bye
+task1:greet
 test
 test:db
 test:system
