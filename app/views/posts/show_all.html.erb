@@ -1,0 +1,17 @@
+<h1> All data in Post</h1>
+<div>
+  <% @allposts.each do |post| %>
+  <%= post.title %>
+  <br>
+  <%= post.body %>
+  <br>
+  <%= link_to 'Update OR Delete' , post_path(post) %>
+ <br>
+ <br>
+  <%= "-"*20%>
+    <br>
+
+
+<% end %>
+<%= link_to 'New Record' , new_post_path, method: :get %>
+</div>
